@@ -5,15 +5,60 @@
 
 # Road Sign Detection
 
-A computer vision project for detecting and classifying road signs using deep learning.
+A computer vision project for detecting and classifying road signs using deep learning. This project explores a dataset of road sign images with XML annotations in PASCAL VOC format and provides a foundation for building road sign detection models.
 
 ## Project Structure 
-<img width="378" height="224" alt="Screenshot from 2025-09-30 16-50-13" src="https://github.com/user-attachments/assets/74da03d5-7cdc-4bcc-934d-3e44dac66fb4" />
+road-sign-detection/
+├── data/ # Dataset directories
+
+│ ├── raw/ # Raw dataset files
+
+│ └── processed/ # Processed dataset files
+
+├── models/ # Trained model files
+
+├── src/ # Source code modules
+
+│ ├── data_preprocessing.py
+
+│ ├── model.py
+
+│ └── utils.py
+
+├── notebooks/ # Jupyter notebooks for exploration
+
+├── config/ # Configuration files
+
+├── scripts/ # Training and prediction scripts
+
+├── requirements.txt # Python dependencies
+
+└── README.md # Project documentation
+<!-- <img width="378" height="224" alt="Screenshot from 2025-09-30 16-50-13" src="https://github.com/user-attachments/assets/74da03d5-7cdc-4bcc-934d-3e44dac66fb4" /> -->
+
 
 
 ## Dataset
+Dataset Link:-https://www.kaggle.com/datasets/andrewmvd/road-sign-detection
 
-The dataset contains road sign images with XML annotations in PASCAL VOC format.
+The dataset contains 877 road sign images with corresponding XML annotations in PASCAL VOC format. The dataset structure includes:
+- `images/` directory with PNG images
+- `annotations/` directory with XML annotation files
+
+## Prerequisites
+
+- Python 3.7+
+- Jupyter Notebook
+- Required Python packages (see requirements.txt)
+
+## Installation
+
+1. Clone this repository:
+```bash
+git clone <repository-url>
+cd road-sign-detection
+```
+
 
 ## Usage
 
@@ -23,8 +68,9 @@ pip install -r requirements.txt
 ```
 
 ## Run the main notebook:
+``` bash
 jupyter notebook road-sign-detection.ipynb
-
+```
 ## Features
 Dataset exploration and visualization
 
@@ -49,4 +95,47 @@ Pillow>=8.3.0
 
 jupyter>=1.0.0
 ```
+## Step-by-Step Execution
+### Dataset Exploration: The notebook automatically explores the dataset structure and displays:
+
+File organization
+
+Sample images
+
+XML annotation parsing
+
+Dataset statistics
+
+Data Analysis: The code includes functions to:
+
+Load and display sample images
+
+Parse PASCAL VOC XML annotations
+
+Examine image dimensions and object counts
+
+Visualize bounding boxes on images
+
+Next Steps: The notebook outlines potential next steps for:
+
+Processing annotations into training labels
+
+Data splitting into train/validation/test sets
+
+Data augmentation implementation
+
+Model training for road sign detection
+
+## Running Individual Components
+### You can also run individual components from the source code:
+``` bash
+# Import and use data preprocessing functions
+from src.data_preprocessing import parse_annotations, load_images
+
+# Use utility functions
+from src.utils import display_sample_images
+```
+# NOTE
+The original IPython notebook with the complete dataset exploration code is provided as road-sign-detection.ipynb. This file contains the main analysis and should be used as the starting point for understanding the dataset and project workflow.
+
 
