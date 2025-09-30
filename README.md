@@ -41,9 +41,21 @@ road-sign-detection/
 ## Dataset
 Dataset Link:-https://www.kaggle.com/datasets/andrewmvd/road-sign-detection
 
-The dataset contains 877 road sign images with corresponding XML annotations in PASCAL VOC format. The dataset structure includes:
+The dataset contains 877 images of 4 distinct classes for the objective of road sign detection road sign images with corresponding XML annotations in PASCAL VOC format. The dataset structure includes:
 - `images/` directory with PNG images
-- `annotations/` directory with XML annotation files
+- `annotations/` directory with XML annotation file
+Bounding box annotations are provided in the PASCAL VOC format.
+
+The classes are:
+
+Trafic Light
+
+Stop
+
+Speedlimit
+
+Crosswalk.
+
 
 ## Prerequisites
 
