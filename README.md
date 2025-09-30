@@ -136,6 +136,6 @@ from src.data_preprocessing import parse_annotations, load_images
 from src.utils import display_sample_images
 ```
 # NOTE
-The original IPython notebook with the complete dataset exploration code is provided as road-sign-detection.ipynb. This file contains the main analysis and should be used as the starting point for understanding the dataset and project workflow.
+The original IPython notebook with the complete dataset exploration code is provided as **road-sign-detection.ipynb**. This file contains the main analysis and should be used as the starting point for understanding the dataset and project workflow.
 
 
